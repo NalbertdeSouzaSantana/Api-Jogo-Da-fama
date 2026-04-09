@@ -32,14 +32,15 @@ MySQL: Banco de dados relacional para persistência.
 
 Insomnia: Ferramenta de teste e documentação de rotas.
 
-⚙️ Como configurar o Banco de Dados
-Para rodar o projeto, você precisará configurar a conexão com o seu banco MySQL no arquivo de configuração:
+### ⚙️ Configuração do Banco de Dados
 
-JavaScript
+Para que a API funcione, você deve configurar suas credenciais no arquivo de conexão:
+
+```javascript
 const conexao = mysql.createConnection({
     host: "SEU_HOST",
     port: "SUA_PORTA",
     user: "SEU_USUARIO",
     password: "SUA_PASSWORD",
     database: "NOME_DO_SEU_BANCO"
-})
+}
